@@ -1,0 +1,12 @@
+# Compiled files
+bin/
+obj/
+
+# Code::Blocks Project Files
+*.cbp
+*.depend
+*.layout
+
+# Temporary files
+*.o
+*.exe
