@@ -1,10 +1,11 @@
-
 # Guess The Number
 
 A retro-style console-based game written in C, where players guess a randomly generated number with hints. The code show robust input handling, bilingual support with UTF-8 encoding, and persistent score tracking. Designed with modularity and cross-platform compatibility in mind, this project demonstrates clean C programming practices and attention to user experience.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Language](https://img.shields.io/badge/language-C-green.svg)
+
+<br>
 
 ## Features 📋
 
@@ -17,6 +18,8 @@ A retro-style console-based game written in C, where players guess a randomly ge
 - **Replay Option**: Seamless replay functionality to encourage repeated play and improve user engagement.
 - **Robust Input Handling**: Comprehensive input validation to prevent crashes and handle edge cases gracefully.
 - **Retro Aesthetic**: ASCII art banner for a nostalgic console experience, optimized for terminal display.
+
+<br>
 
 ## System Requirements ⚙️
 
@@ -33,6 +36,7 @@ The following components are required to build, run, or contribute to this proje
 > [!TIP]
 > For optimal setup, install GCC via [MinGW](https://www.mingw-w64.org/) on Windows or use a package manager like `apt` or `brew` on Linux/macOS to install Git and GCC.
 
+<br>
 
 ## Installation </>
 
@@ -54,10 +58,13 @@ The following components are required to build, run, or contribute to this proje
 	```bash
 	./guess
 	```
+<br>
 	
 ## License 🧾
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+<br>
 
 ## Crédits ☕
 
@@ -65,6 +72,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 > Feel free to reach out via [GitHub](https://github.com/PHForge) for feedback or collaboration ideas!
 
 > Special thanks ❤️ to my wife and son for their patience and love.
+
+<br>
 
 ## Example Output 💻
 
