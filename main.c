@@ -119,12 +119,14 @@ void configure_settings(struct GameSettings *settings) {
     while (getchar() != '\n');
 
     switch (choice) {
+        // Change the current game language
         case 1:
             settings->is_english = !settings->is_english;
             printf(settings->is_english ? "\nLanguage set to English.\n" : "\nLangue définie sur Français.\n");
             printf(settings->is_english ? "Choice validated and recorded.\n" : "Choix validé et enregistré.\n");
             printf(settings->is_english ? "Back to main menu.\n" : "Retour au menu principal.\n");
             break;
+        // Change the game range with a max of 1000
         case 2: {
             int min, max;
             printf(settings->is_english ? "Enter minimum number: " : "Entrez le nombre minimum : ");
@@ -162,7 +164,7 @@ void display_credits(struct GameSettings *settings) {
     printf(settings->is_english ? "\n=== Credits ===\n" : "\n=== Crédits ===\n");
     printf(settings->is_english ? "\nThis game is dedicated to my beloved wife and son, whose patience and love inspire me every day.\n" : "\nCe jeu est dédié à ma femme et mon fils adorés, dont la patience et l’amour m’inspirent chaque jour.\n");
     printf(settings->is_english ? "\nPress Enter to continue...\n" : "\nAppuyez sur Entrée pour continuer...\n");
-    while (getchar() != '\n'); // Wait for Enter
+    while (getchar() != '\n');
 }
 
 int main() {
@@ -178,6 +180,7 @@ int main() {
 
     display_banner();
     do {
+        // Main game menu
         printf(settings.is_english ? "\n=== Guess the Number ===\n" : "\n=== Devinez le Nombre ===\n");
         printf(settings.is_english ? "1. Play\n" : "1. Jouer\n");
         printf(settings.is_english ? "2. Show best score\n" : "2. Voir le meilleur score\n");
@@ -195,6 +198,7 @@ int main() {
 
         switch (choice) {
             case 1: {
+                // Launches the game and offers to play again at the end. Compares the current score to see if it should be saved as the new high score.
                 char replay;
                 do {
                     int attempts = play_game(&settings);
